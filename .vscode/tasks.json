@@ -7,8 +7,10 @@
             "command": "cl.exe",
             "args": [
                 "/DUNICODE",
+                "/DWINDOWS",
                 "/D_UNICODE",
                 "/Zi",
+                "/std:c++17",
                 "/Fe:",
                 "helloworld.exe",
                 "helloworld.cpp",

@@ -10,7 +10,8 @@
             "stopAtEntry": true,
             "cwd": "${workspaceFolder}",
             "environment": [],
-            "externalConsole": true
+            "externalConsole": true,
+            "preLaunchTask": "msvc build",
         },
         {
             "name": "(gdb) Launch",
