@@ -8,20 +8,26 @@
             "args": [
                 "/DUNICODE",
                 "/D_UNICODE",
-                "/Zi", // Symbols
-                "/Fe:", // executable name
+                "/Zi",
+                "/Fe:",
                 "helloworld.exe",
                 "helloworld.cpp",
                 "advapi32.lib"
             ],
-            "group":  {
-                "kind": "build",
-                "isDefault": true
-            },
+            "group": "build",
             "presentation": {
-                "reveal":"always"
+                "reveal": "always"
             },
             "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "Linux build",
+            "type": "shell",
+            "command": "g++ -Wall -std=c++17 -g helloworld.cpp -o helloworld",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
         }
     ]
 }
